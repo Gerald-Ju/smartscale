@@ -1,1 +1,1 @@
-# smartscale.github.io
+# The Smart Scale Website
