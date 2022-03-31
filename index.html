@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Scale for Coffee</title>
+    <title>Smart Scale - Home</title>
     <link rel="stylesheet" href="styles.css"></link>
 </head>
 <body>
@@ -12,7 +12,7 @@
 
     <nav class="navbar"> 
         <div class="navbar-container">
-            <a href="#home" id ="navbar-logo">Smart Scale for Coffee</a>
+            <a href="#home" id ="navbar-logo">Smart Scale</a>
             <div class="navbar-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -23,16 +23,78 @@
                     <a href="#home" class="navbar-links" id="home-page">Home</a>
                 </li>   
                 <li class="navbar-btn">
-                    <a href="#scale" class="button" id="scale-page">Weigh In</a>
+                    <a href="#weigh" class="button" id="weigh-page">Weigh In</a>
                 </li> 
             </ul>
         </div>
     </nav>
 
-    <!-- Home Page -->
+    <!-- Main -->
+
     <div class="homepage" id="home">
-        <h1 >Welcome to the Smart Scale Website</h1>
-        <p>Here is where coffee and food weighing enthusiasts can create new combinations of their favourite recipes</p>
+        <div class="homepage-container">
+            <h1 class="homepage-heading">Welcome to the <span>Smart Scale</span> Website</h1>
+            <p class="homepage-description">Here is where coffee and food weighing enthusiasts can recreate their favourite recipes or create new combinations</p>
+            <button class="homepage-btn" onClick="window.location.href='#weigh'"><a href="#weigh">Get Started</a></button>
+        </div>
+    </div>
+
+    <!-- Weigh Page -->
+
+    <div class="weighpage" id="weigh">
+        <div class="weighpage-container">
+            <div class="weighpage-content">
+                <h1>Weigh Ingredients</h1>
+                <h2>Create New Combinations</h2>
+                <button class="weighpage-btn" onClick="window.location.href='./page/weigh.html'">
+                    <a href="./page/weigh.html">Start Weighing</a>
+                </button>
+            </div>
+            <div class="weighpage-content">
+                <h1>See Previous Recipes</h1>
+                <button class="weighpage-btn" onClick="window.location.href='./page/recipes.html'">
+                    <a href="./page/recipes.html">Recipes</a>
+                </button>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Links</h2>
+                    <a href="#home">Home</a>
+                    <a href="#weigh">Weigh</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>GitHub</h2>
+                    <a target="_blank" href="https://github.com/Gerald-Ju?tab=repositories">Code Repository</a>
+                </div>
+            </div>
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Social Media</h2>
+                    <a href="/" target="_blank">Placeholder</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2></h2>
+                    <a href="/placeholder3"></a>
+                </div>
+            </div>
+        </div>
+        <section class="social-media">
+            <div class="social-media-wrap">
+                <div  class="footer-logo">
+                    <a href="#home" class="logo" id="footer-logo">Smart Scale</a>
+                </div>
+                <p class="website-rights">© Smart Scale 2022. All rights reserved (but not really)</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="app.js"></script>
