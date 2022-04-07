@@ -1,6 +1,10 @@
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar-menu");
 const navLogo = document.querySelector("#navbar-logo");
+const ingredient = document.getElementById("ingredient");
+const weight = document.getElementById("weight");
+const insertBtn = document.getElementById("insertBtn");
+const output = document.getElementById("output");
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -51,3 +55,20 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
+
+insertBtn.onclick = function () {
+  const key = ingredient.value;
+  const value = weight.value;
+
+  if (key && value) {
+    localStorage.setItem(key, value);
+    location.reload();
+  }
+};
+
+for (let i = 0; i < localStorage.length; i++) {
+  const key = this.localStorage.key(i);
+  const value = localStorage.getItem(key);
+
+  output.innerHTML += `${key}: ${value}<br />`;
+}

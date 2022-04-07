@@ -234,14 +234,16 @@
 }
 
 .homepage-description {
-  font-size: 50px;
-  background: #da22ff;
+  font-size: 35px;
+  /*background: #da22ff;
   background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
   background: linear-gradient(to right, #8f0eff, #da22ff);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  */
+  color: #fff;
 }
 
 .highlight {
@@ -348,7 +350,7 @@
 }
 
 .weighpage-content h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   background: #ff8177;
   background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
   background: linear-gradient(to right, #8f0eff, #da22ff);
@@ -372,7 +374,7 @@
   position: relative;
   transition: all 0.35s;
   outline: none;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .weighpage-btn a {
@@ -609,8 +611,30 @@
 .weigh-html-page-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+legend {
+  color: rgb(221, 219, 219);
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+input {
+  padding: 7px;
+  height: 40px;
+  margin: 1rem;
+}
+
+.weigh-html-page-content p {
+  color: rgb(221, 219, 219);
+  font-size: 500px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  max-width: 800px;
 }
 
 .weigh-html-page-content p {
@@ -629,6 +653,11 @@
     justify-content: center;
     width: 100%;
     margin: 5rem auto;
+  }
+
+  .weigh-html-page-container h1 {
+    align-items: center;
+    justify-content: center;
   }
 
   .weigh-html-page-img-container {
